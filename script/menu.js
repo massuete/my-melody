@@ -1,3 +1,5 @@
+/*Menu*/
+
 const botaoAbrir = document.querySelector('#burguer');
 const opcoes = document.querySelector('#menu');
 const botaoFechar = document.querySelector('#fechar-menu')
@@ -17,7 +19,26 @@ botaoAbrir.addEventListener('click', abrirMenu)
 botaoFechar.addEventListener('click', fecharMenu)
 
 opcoes.addEventListener('click', (e) => {
-  if (e.target === overlay) {
+  if (e.target === opcoes) {
     fecharMenu();
   }
 });
+
+/*Slider de Imagens*/
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+  proximaImagem();
+}, 4000)
+
+function proximaImagem(){
+  count++;
+  if(count>3){
+    count = 1;
+  }
+
+  document.getElementById("radio"+count).checked = true;
+
+}
