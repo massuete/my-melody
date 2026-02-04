@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "titulos";
+    src: url(../fontes/Blue\ Beach.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "paragrafos";
+    src: url(../fontes/Cocogoose-Pro-Light-trial.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "footer";
+    src: url(../fontes/CaviarDreams.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --amarelo-solar: #FFC861;
     --verde-praia: #61C3A7;
@@ -18,6 +39,18 @@ body, html{
     height: 100%;
     width: 100%;
 
+}
+
+h2{
+    font-family: "titulos", sans-serif;
+
+    color: white;
+    text-shadow: 4px 3px 3px var(--coral-vibrante);
+    font-size: 4.5em;
+}
+
+p{
+    font-family: "paragrafos", sans-serif;
 }
 
 header{
@@ -212,4 +245,164 @@ label.manual-botao:hover{
 
 img{
     width: 100px;
+}
+
+/*Sobre Hi Melody*/
+
+section#back_yellow{
+    background-color: var(--amarelo-solar);
+}
+
+section#back_yellow > h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+section#back_yellow > p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 30px;
+}
+
+section#back_yellow > img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section#back_blue{
+    background-color: #65a5ca;
+}
+
+section#back_blue > h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+section#back_blue > p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 30px;
+}
+
+section#back_blue > img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Background Images*/
+
+div#background_images > img{
+    display: block;
+    width: 100%;
+}
+
+/*Footer*/
+
+footer{
+    background-image: url(../imagens/backgorund_footer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 640px;
+}
+
+footer p, h3{
+    color: #F4E6C3;
+    font-family: "footer", sans-serif;
+}
+
+footer > div#footer_title{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer div#footer_title > img{
+    padding-top: 90px;
+    width: 300px;
+}
+
+footer > div#footer_title > p{
+    text-align: center;
+    margin: 0;
+}
+
+footer > div#footer_base{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+#contato{
+    width: 300px;
+
+    text-align: center;
+}
+
+.endereco{
+    padding-bottom: 20px;
+}
+
+.titulo_linha{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+
+    font-family: "footer";
+    color: #F4E6C3;
+}
+
+.titulo_linha::before, .titulo_linha::after{
+    content: "";
+    flex: 1;
+    height: 2px;
+}
+
+.titulo_linha::before{
+  background: linear-gradient(to left, var(--areia-suave), transparent);
+}
+
+.titulo_linha::after{
+  background: linear-gradient(to right, var(--areia-suave), transparent);
+}
+
+.titulo_linha span{
+  white-space: nowrap;
+  letter-spacing: .12em;
+}
+
+.separador_vertical{
+    margin: 0px 20px;
+    width: 2px;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, var(--areia-suave), transparent);
+}
+
+#icons_social_media > p{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#icons_social_media > a > img{
+    width: 90px;
+    padding: 0px 20px;
+}
+
+.direitos_reservados{
+    padding-top: 100px;
+    text-align: center;
 }
