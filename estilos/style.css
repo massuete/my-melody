@@ -8,6 +8,13 @@
 }
 
 @font-face {
+    font-family: "sub";
+    src: url(../fontes/Comfortaa-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "paragrafos";
     src: url(../fontes/Cocogoose-Pro-Light-trial.ttf);
     font-weight: bold;
@@ -142,6 +149,8 @@ header > nav > a > img{
     width: 200px;
 }
 
+
+/*HOME*/
 /*Slider de Imagem*/
 
 div.slider{
@@ -405,4 +414,81 @@ footer > div#footer_base{
 .direitos_reservados{
     padding-top: 100px;
     text-align: center;
+}
+
+/*MENU*/
+/*Main_menu*/
+
+section#menu_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    height: 600px;
+    background-image: url(../imagens/background_menu_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--areia-suave);
+}
+
+section#menu_main > h1{
+    font-family: "titulos";
+    color: white;
+    font-size: 6em;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.486);
+    padding-bottom: 20px;
+}
+
+section#menu_main > p{
+    color: white;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.486);
+    padding-bottom: 10px;
+}
+
+section#menu_main > a{
+    font-family: "paragrafos";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+    width: 140px;
+    height: 40px;
+    background-color: var(--coral-vibrante);
+
+    box-shadow: 7px 3px 3px rgba(0, 0, 0, 0.397);
+}
+
+section#menu_main > a:hover{
+    background-color: #0d405e;
+    transition: 0.5s;
+}
+
+/*Ancoras*/
+
+section#ancoras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+}
+
+section#ancoras > a{
+    text-decoration: none;
+    color: #0d405e;
+    font-size: 1.2em;
+
+    padding: 0px 15px;
+}
+
+section#ancoras > a > p{
+    font-family: "sub";
 }
