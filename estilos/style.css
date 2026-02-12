@@ -43,6 +43,7 @@
 }
 
 body, html{
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
 
@@ -542,4 +543,34 @@ div#center_title::after{
 div#center_title > h2{
     color: #fc5141;
     text-shadow: none;
+}
+
+div.menu_itens article{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+div.menu_itens article #info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+div.menu_itens article h3{
+    margin: 0;
+    color: #0d405e;
+    font-size: 1.6em;
+}
+
+div.menu_itens article img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
 }
