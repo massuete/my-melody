@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+
+        <section class="contato_titulo">
+            <h1>Contato</h1>
+            <p>Mande uma mensagem para nós e retornaremos o mais breve possível. Sempre estaremos de ouvidos abertos para sua opinião!</p>
+        </section>
+
+        <section class="form_contato">
+
+            <form action="#" method="post">
+
+                <div id="campo_contato">
+                    <label for="nome">Nome <span id="class_required">- Obrigatório</span></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div id="campo_contato">
+                    <label for="email">Email <span id="class_required">- Obrigatório</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div id="campo_contato">
+                    <label for="telefone">Número de Telefone <span id="class_required">- Obrigatório</span></label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+
+                <div id="campo_contato">
+                    <label for="unidade">De qual unidade você deseja contatar? <span id="class_required">- Obrigatório</span></label>
+                    <select name="unidade" id="unidade" required>
+                        <option value="">De qual unidade você deseja contatar?</option>
+                        <option value="praia">Praia do Paraíso</option>
+                        <option value="centro">Centro</option>
+                        <option value="zona-sul">Zona Sul</option>
+                    </select>
+                </div>
+
+                <div id="campo_contato">
+                    <label for="assunto">Qual assunto deseja tratar? <span id="class_required">- Opcional</span></label>
+                    <select name="assunto" id="assunto">
+                        <option value="">Qual assunto deseja tratar?</option>
+                        <option value="reserva">Reserva</option>
+                        <option value="evento">Evento</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                </div>
+
+                <div id="campo_contato">
+                    <label for="mensagem">Mensagem <span id="class_required">- Obrigatório</span></label>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
