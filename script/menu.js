@@ -42,3 +42,5 @@ function proximaImagem(){
   document.getElementById("radio"+count).checked = true;
 
 }
+
+/*Formulário*/

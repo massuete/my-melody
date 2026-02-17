@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#home"><img src="imagens/hi_melody_icon.png" alt="Hi Melody — voltar ao início"></a>
+
+            <div>
+                <span class="material-symbols-outlined" id="burguer">menu</span>
+            </div>
+
+            <div id="menu" class="menu">
+                <span class="material-symbols-outlined" id="fechar-menu">close</span>
+
+                <ul>
+                <li><a href="#">Unidades</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <hr>
+            </div>
+        </nav>
+    </header>
+
     <main>
 
         <section class="contato_titulo">
@@ -20,23 +45,23 @@
 
                 <div id="campo_contato">
                     <label for="nome">Nome <span id="class_required">- Obrigatório</span></label>
-                    <input type="text" name="nome" id="nome" required>
+                    <input type="text" name="nome" id="nome" required placeholder="Nome">
                 </div>
 
                 <div id="campo_contato">
                     <label for="email">Email <span id="class_required">- Obrigatório</span></label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required placeholder="Email">
                 </div>
 
                 <div id="campo_contato">
                     <label for="telefone">Número de Telefone <span id="class_required">- Obrigatório</span></label>
-                    <input type="tel" name="telefone" id="telefone" required>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="Telefone">
                 </div>
 
                 <div id="campo_contato">
                     <label for="unidade">De qual unidade você deseja contatar? <span id="class_required">- Obrigatório</span></label>
                     <select name="unidade" id="unidade" required>
-                        <option value="">De qual unidade você deseja contatar?</option>
+                        <option value="" disabled selected hidden>De qual unidade você deseja contatar?</option>
                         <option value="praia">Praia do Paraíso</option>
                         <option value="centro">Centro</option>
                         <option value="zona-sul">Zona Sul</option>
@@ -46,7 +71,7 @@
                 <div id="campo_contato">
                     <label for="assunto">Qual assunto deseja tratar? <span id="class_required">- Opcional</span></label>
                     <select name="assunto" id="assunto">
-                        <option value="">Qual assunto deseja tratar?</option>
+                        <option value="" disabled selected hidden>Qual assunto deseja tratar?</option>
                         <option value="reserva">Reserva</option>
                         <option value="evento">Evento</option>
                         <option value="reclamacao">Reclamação</option>
@@ -55,7 +80,7 @@
 
                 <div id="campo_contato">
                     <label for="mensagem">Mensagem <span id="class_required">- Obrigatório</span></label>
-                    <textarea name="mensagem" id="mensagem" cols="50" rows="5" required></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="5" required placeholder="Sua mensagem"></textarea>
                 </div>
 
                 <button type="submit">
@@ -66,4 +91,5 @@
         </section>
     </main>
 </body>
+<script src="script/menu.js"></script>
 </html>

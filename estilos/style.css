@@ -17,7 +17,7 @@
 @font-face {
     font-family: "paragrafos";
     src: url(../fontes/Cocogoose-Pro-Light-trial.ttf);
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -147,7 +147,7 @@ body.menu-aberto{
 }
 
 header > nav > a > img{
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -573,4 +573,91 @@ div.menu_itens article img{
     height: 80px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/*CONTATO*/
+/*Título*/
+
+.contato_titulo{
+    font-family: "footer";
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 120px 0px 40px 0px;
+}
+
+.contato_titulo > h1{
+    padding-bottom: 10px;
+    font-size: 5em;
+}
+
+.contato_titulo > p{
+    font-family: "sub";
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 1.6;
+}
+
+/*Formulário*/
+
+.form_contato{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#campo_contato{
+    padding: 5px 0px;
+}
+
+#campo_contato > label{
+    display: block;
+    font-family: "paragrafos";
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+#campo_contato span{
+    color: rgb(175, 175, 175);
+    font-style: italic;
+}
+
+#campo_contato input, select, textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "paragrafos";
+}
+
+#campo_contato input, select, textarea{
+    width: 100%;
+    height: 45px;
+    padding: 12px 14px;
+    border-radius: 6px;
+}
+
+#campo_contato input, select, textarea{
+    border: 2px solid #d6cbb3;
+    background-color: #f7f4ea;
+    transition: 0.25s;
+}
+
+#campo_contato input:focus, select:focus, textarea:focus{
+    border-color: var(--coral-vibrante);
+    background-color: white;
+}
+
+#campo_contato textarea{
+    min-height: 140px;
+    resize: vertical;
+}
+
+#campo_contato ::placeholder{
+    color: #9b9481;
 }
