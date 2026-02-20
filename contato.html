@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body class="contato">
     <header>
         <nav>
-            <a href="#home"><img src="imagens/hi_melody_icon.png" alt="Hi Melody — voltar ao início"></a>
+            <a href="index.html"><img src="imagens/hi_melody_icon.png" alt="Hi Melody — voltar ao início"></a>
 
             <div>
                 <span class="material-symbols-outlined" id="burguer">menu</span>
@@ -24,7 +24,7 @@
                 <li><a href="menu.html">Menus</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Reservas</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
 
             <hr>
@@ -83,13 +83,53 @@
                     <textarea name="mensagem" id="mensagem" cols="50" rows="5" required placeholder="Sua mensagem"></textarea>
                 </div>
 
-                <button type="submit">
-                    Enviar
-                </button>
+                <div id="botao">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </div>
 
             </form>
         </section>
     </main>
+    <footer>
+        <div id="footer_title">
+            <img src="imagens/titulo_footer.png" alt="Hi Melody">
+            <p>Música, mar e sabores tropicais.</p>
+        </div>
+
+        <div id="footer_base">
+
+            <div id="contato">
+                <h3 class="titulo_linha">
+                    <span>CONTATO</span></h3>
+                <div class="endereco">
+                    <p>⩒  Rua das Ondas, 123</p>
+                    <p>Praia do Paraíso, RJ</p>
+                </div>
+
+                <div class="horarios">
+                    <p>◷  Seg - Sex: 17h - 01h</p>
+                    <p>Sáb - Dom: 15h - 03h</p>
+                </div>
+            </div>
+
+            <div class="separador_vertical"></div>
+
+            <div id="icons_social_media">
+                <p>Siga nas redes:</p>
+
+                <a href="#"><img src="imagens/facebook_icon.png" alt="Ícone Facebook"></a>
+                <a href="#"><img src="imagens/instagram_icon.png" alt="Ícone Instagram"></a>
+                <a href="#"><img src="imagens/spotify_icon.png" alt="Ícone Spotify"></a>
+            </div>
+
+        </div>
+
+        <div class="direitos_reservados">
+            <p>© Hi Melody — Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 <script src="script/menu.js"></script>
 </html>
