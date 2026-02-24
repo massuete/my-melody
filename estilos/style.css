@@ -693,3 +693,57 @@ div#botao > button:hover{
 body.sobre #title_main{
     background-image: url(../imagens/praia_sobre_back.jpg);
 }
+
+/*UNIDADE*/
+/*Título*/
+
+body.unidade #title_main{
+    background-image: url(../imagens/picnic_sobre_back.jpg);
+    height: 400px;
+}
+
+body.unidade #title_main > img{
+    min-width: 300px;
+}
+
+/*Conteúdo*/
+
+#main_content_unidade{
+    padding: 15px;
+}
+
+#horario_localizacao h2{
+    font-family: "sub";
+    color: black;
+    text-shadow: none;
+    font-size: 3.0em;
+    text-align: center;
+    padding: 30px;
+}
+
+#horario_localizacao p, #bio_local p{
+    font-family: "paragrafo";
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+#horario_localizacao h3{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#bio_local img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/*Mapa Google*/
+
+#localizacao iframe{
+    width: 100%;
+}
