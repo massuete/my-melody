@@ -154,64 +154,81 @@ header > nav > a > img{
 /*HOME*/
 /*Slider de Imagem*/
 
-div.slider{
-    position: relative;
-    background-color: green;
-    margin: 0 auto;
+div.slider {
     width: 100%;
-    height: 700px;
+    max-width: 100vw;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
-#radio1:checked ~ .first{
-    margin-left: 0;
-} 
-
-#radio2:checked ~ .first{
-    margin-left: -100%;
-} 
-
-#radio3:checked ~ .first{
-    margin-left: -200%;
-} 
-
-div.slides{
-    width: 300%;
-    height: 700px;
+div.slides {
     display: flex;
+    width: 300%; 
+    height: auto;
 }
 
-div.slides input{
+div.slides input {
     display: none;
 }
 
-div.slide{
-    flex: 0 0 100%;
-    width: 100%;
-    position: relative;
-    transition: 2s;
+div.slide {
+    width: 33.3333%; 
+    transition: 0.8s; 
 }
 
-div.slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position:  center center;
+div.slide img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    object-fit: contain; 
 }
 
-div.navegacao-auto{
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -33.3333%; 
+}
+
+#radio3:checked ~ .first {
+    margin-left: -66.6666%; 
+}
+
+
+div.navegacao-manual {
     position: absolute;
     width: 100%;
-    margin-top: 650px;
+    bottom: 20px; 
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+label.manual-botao {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+div.navegacao-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
-div.navegacao-auto div{
-    border: 2px solid var(--azul-oceano);
+div.navegacao-auto div {
+    border: 2px solid white;
     padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
     transition: 0.5s;
 }
 
@@ -221,8 +238,8 @@ div.navegacao-auto div:not(:last-child){
 
 div.navegacao-manual{
     position: absolute;
+    bottom: 5.7%;
     width: 100%;
-    margin-top: -50px;
     display: flex;
     justify-content: center;
 }
@@ -251,10 +268,6 @@ label.manual-botao:not(:last-child){
 
 label.manual-botao:hover{
     background-color: white;
-}
-
-img{
-    width: 100px;
 }
 
 /*Sobre Hi Melody*/
