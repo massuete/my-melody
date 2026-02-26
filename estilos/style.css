@@ -716,7 +716,7 @@ body.unidade #title_main{
 }
 
 body.unidade #title_main > img{
-    min-width: 300px;
+    width: 50%;
 }
 
 /*Conteúdo*/
