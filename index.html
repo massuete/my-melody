@@ -6,6 +6,7 @@
     <title>Hi Melody</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <header>
@@ -69,9 +70,17 @@
         </div>
 
         <section id="back_yellow">
-            <h2>Hi Melody</h2>
-            <p>O Hi Melody nasceu como um refúgio tropical onde música, mar e gastronomia se encontram. Criamos um espaço leve, vibrante e elegante para quem quer sentir a praia em cada detalhe — do primeiro drink ao último pôr do sol.</p>
-            <img src="imagens/imagem_sobre_home.jpg" alt="Bar Hi Melody">
+            <div id="text_flex">
+                <h2>Hi Melody</h2>
+                <p>O Hi Melody nasceu como um refúgio tropical onde música, mar e gastronomia se encontram. Criamos um espaço leve, vibrante e elegante para quem quer sentir a praia em cada detalhe — do primeiro drink ao último pôr do sol.</p>
+            </div>
+            <div id="image_flex">
+                <picture>
+                    <source media="(min-width:800px)" srcset="imagens/tablet_sobre_home.jpg">
+
+                    <img src="imagens/mobile_sobre_home.jpg" type="Hi Melody">
+                </picture>
+            </div>
         </section>
 
         <div id="background_images">
