@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body class="sobre">
@@ -23,7 +24,7 @@
 
                 <ul>
                     <li><a href="unidade.html">Unidade</a></li>
-                    <li><a href="menu.html">Menus</a></li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="#">Reservas</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -39,9 +40,17 @@
         </section>
 
         <section id="back_yellow">
-            <h2>Nossa Essencia</h2>
-            <p>O Hi Melody nasceu do encontro entre música, praia e comida feita para compartilhar. A ideia surgiu entre amigos apaixonados por viagens costeiras e festivais ao pôr do sol — lugares onde as pessoas não vão apenas para comer, mas para sentir. O restaurante foi criado para trazer essa atmosfera para a cidade: um espaço leve, colorido e vivo, onde cada detalhe lembra férias, mesmo em um dia comum.</p>
-            <img src="imagens/amigos_sobre.jpg" alt="Amigos aproveitando no Hi Melody">
+            <div id="text_flex">
+                <h2>Nossa Essencia</h2>
+                <p>O Hi Melody nasceu do encontro entre música, praia e comida feita para compartilhar. A ideia surgiu entre amigos apaixonados por viagens costeiras e festivais ao pôr do sol — lugares onde as pessoas não vão apenas para comer, mas para sentir. O restaurante foi criado para trazer essa atmosfera para a cidade: um espaço leve, colorido e vivo, onde cada detalhe lembra férias, mesmo em um dia comum.</p>
+            </div>
+            <div id="image_flex">
+                <picture>
+                    <source media="(min-width:800px)" srcset="imagens/tablet_amigos_sobre.jpg">
+
+                    <img src="imagens/amigos_sobre.jpg" alt="Amigos aproveitando no Hi Melody">
+                </picture>
+            </div>
         </section>
 
         <div id="background_images">
@@ -49,9 +58,16 @@
         </div>
 
         <section id="back_blue">
-            <h2>Historia</h2>
-            <p>Fundado por amantes de cultura tropical e da gastronomia casual contemporânea, o Hi Melody começou como um pequeno bar de drinks artesanais inspirado em beach clubs internacionais. Com o tempo, os clientes passaram a ficar mais tempo do que o esperado — conversando, rindo e pedindo algo para acompanhar. Assim nasceu o cardápio: simples, criativo e pensado para momentos longos, não apenas refeições rápidas.</p>
-            <img src="imagens/bebidas_sobre.jpg" alt="Cocos verdes e bebidas">
+            <div id="text_flex">
+                <h2>Historia</h2>
+                <p>Fundado por amantes de cultura tropical e da gastronomia casual contemporânea, o Hi Melody começou como um pequeno bar de drinks artesanais inspirado em beach clubs internacionais. Com o tempo, os clientes passaram a ficar mais tempo do que o esperado — conversando, rindo e pedindo algo para acompanhar. Assim nasceu o cardápio: simples, criativo e pensado para momentos longos, não apenas refeições rápidas.</p>
+            </div>
+            <div id="image_flex">
+                <picture>
+                    <source media="(min-width:800px)" srcset="imagens/tablet_bebidas_sobre.jpg">
+                    <img src="imagens/bebidas_sobre.jpg" alt="Cocos verdes e bebidas">
+                </picture>
+            </div>
         </section>
 
         <div id="background_images">
@@ -59,9 +75,17 @@
         </div>
 
         <section id="back_yellow">
-            <img src="imagens/cozinha_sobre.jpg" alt="Cozinha aberta no Hi Melody">
-            <h2>Cozinha</h2>
-            <p>Nossa cozinha mistura sabores tropicais com técnicas modernas. O time culinário trabalha com ingredientes frescos, cítricos e leves, criando pratos que combinam com calor, música e encontros. Cada receita foi pensada para harmonizar com bebidas refrescantes — nada pesado demais, tudo equilibrado para compartilhar.</p>
+            <div id="image_flex">
+                <picture>
+                    <source media="(min-width:800px)" srcset="imagens/tablet_cozinha_sobre.png">
+
+                    <img src="imagens/cozinha_sobre.jpg" alt="Cozinha aberta no Hi Melody">
+                </picture>
+            </div>
+            <div id="text_flex">
+                <h2>Cozinha</h2>
+                <p>Nossa cozinha mistura sabores tropicais com técnicas modernas. O time culinário trabalha com ingredientes frescos, cítricos e leves, criando pratos que combinam com calor, música e encontros. Cada receita foi pensada para harmonizar com bebidas refrescantes — nada pesado demais, tudo equilibrado para compartilhar.</p>
+            </div>
         </section>
 
         <div id="background_images">
@@ -69,9 +93,17 @@
         </div>
 
         <section id="back_blue">
-            <img src="imagens/festa_sobre.jpg" alt="Pessoas aproveitando o clima praiano">
-            <h2>Experiencia</h2>
-            <p>Mais do que um restaurante, o Hi Melody é um ponto de encontro. A música, a iluminação e os aromas fazem parte do prato tanto quanto os ingredientes. Queremos que cada visita seja como uma pausa na rotina — um lugar para celebrar, relaxar e voltar sempre. Aqui, a experiência começa no primeiro gole e continua até depois da última música.</p>
+            <div id="image_flex">
+                <picture>
+                    <source media="(min-width:800px)" srcset="imagens/tablet_festa_sobre.png">
+
+                    <img src="imagens/festa_sobre.jpg" alt="Pessoas aproveitando o clima praiano">
+                </picture>
+            </div>
+            <div id="text_flex">
+                <h2>Experiencia</h2>
+                <p>Mais do que um restaurante, o Hi Melody é um ponto de encontro. A música, a iluminação e os aromas fazem parte do prato tanto quanto os ingredientes. Queremos que cada visita seja como uma pausa na rotina — um lugar para celebrar, relaxar e voltar sempre. Aqui, a experiência começa no primeiro gole e continua até depois da última música.</p>
+            </div>
         </section>
     </main>
      <footer>

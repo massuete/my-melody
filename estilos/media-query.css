@@ -25,4 +25,22 @@
         height: 100%;
         object-fit: cover;
     }
+
+    /*Unidade*/
+
+    #main_content_unidade{
+        display: flex;
+        gap: 40px;
+    }
+
+    #horario_localizacao{
+        width: 50%;
+        padding: 10px 10px;
+        flex: 1;
+    }
+
+    #bio_local{
+        width: 50%;
+        padding: 10px 10px;
+    }
 }
