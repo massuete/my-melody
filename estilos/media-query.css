@@ -1,5 +1,26 @@
 @charset "UTF-8";
+/*Pequenas Telas*/
 
+@media (min-width: 300px) and (max-width:600px){
+    #footer_base{
+        margin: 10px;
+    }
+
+    #icons_social_media{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icons_social_media a{
+        padding: 5px 0px;
+    }
+
+    .direitos_reservados{
+        padding-bottom: 20px;
+    }
+}
 /*Tablet*/
 
 @media (min-width: 800px){
@@ -78,7 +99,7 @@
 
     #menu{
         display: flex;
-        width: 420px;
+        width: 330px;
         height: 35px;
         transform: translateY(0);
         position: static;
@@ -120,5 +141,20 @@
         background-image: none;
         max-width: 700px;
         margin: auto;
+    }
+
+    /*UNIDADE*/
+
+    body.unidade #title_main{
+    height: 600px;
+    }
+
+    body.unidade #title_main > img{
+        width: 30%;
+    }
+
+    .mid_section_unidade{
+        margin: auto;
+        max-width: 1100px;
     }
 }   

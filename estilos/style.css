@@ -86,6 +86,10 @@ nav{
     padding-top: 5px;
 }
 
+nav > a{
+   filter: drop-shadow(0 0 1rem black);
+}
+
 span#burguer{
     background-color: var(--coral-vibrante);
     box-shadow: -6px 6px 1px var(--amarelo-solar) ;
@@ -375,7 +379,7 @@ footer{
     background-position: center center;
     background-size: cover;
 
-    height: 640px;
+    min-height: 640px;
 }
 
 footer p, h3{
@@ -746,12 +750,12 @@ body.sobre #title_main{
 /*Título*/
 
 body.unidade #title_main{
-    background-image: url(../imagens/picnic_sobre_back.jpg);
+    background-image: url(../imagens/picnic_sobre_back.png);
     height: 400px;
 }
 
 body.unidade #title_main > img{
-    width: 50%;
+    width: 45%;
 }
 
 /*Conteúdo*/
